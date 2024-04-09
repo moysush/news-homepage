@@ -20,7 +20,6 @@ Live Site: [News Homepage](https://sushcod3.github.io/news-homepage/)
 ### Screenshot
 
 ![Desktop Screenshot](./assets/images/screenshot-d.jpeg)
-![Mobile Screenshot](./assets/images/screenshot-m.jpeg)
 
 ### Technologies Used
 
