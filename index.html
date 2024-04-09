@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo.svg"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>News homepage</title>
+  </head>
+  <body class="lg:p-20">
+    <div class="header flex flex-row justify-between items-center mb-4">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="logo" />
+      </div>
+      <div class="navbar">
+        <nav>
+          <div class="navbar-toggle sm:hidden" onclick="toggleMenu()">
+            <img src="./assets/images/icon-menu.svg" class="cursor-pointer" alt="icon-menu">
+          </div>
+          <div class="hidden sm:block">
+            <ul class="navbar-items flex flex-row">
+              <li class="sm:me-8"><a href="#home" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e]">Home</a></li>
+              <li class="sm:me-8"><a href="#new" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e]">New</a></li>
+              <li class="sm:me-8"><a href="#" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e]">Popular</a></li>
+              <li class="sm:me-8"><a href="#trending" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e]">Trending</a></li>
+              <li class=""><a href="#" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e]">Categories</a></li>
+          </ul>
+          </div>
+          <div class="navbar-menu hidden fixed top-0 right-0 h-full w-full bg-[#00000090]" id="navbarMenu">
+            <div class="fixed h-full w-60 right-0 bg-white">
+              <div class="flex justify-end mt-8 me-8" onclick="closeMenu()">
+                <img src="./assets/images/icon-menu-close.svg" class="cursor-pointer mb-16" alt="icon-menu">
+              </div>
+              <ul clsass="navbar-items m-5" >
+                  <li class="sm:me-8"><a href="#home" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e] ms-8">Home</a></li>
+                  <li class="sm:me-8"><a href="#new" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e] ms-8">New</a></li>
+                  <li class="sm:me-8"><a href="#" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e] ms-8">Popular</a></li>
+                  <li class="sm:me-8"><a href="#trending" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e] ms-8">Trending</a></li>
+                  <li class=""><a href="#" class="text-[#a09fa5] hover:text-[#e8ad4e] focus:text-[#e8ad4e] ms-8">Categories</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <div class="top lg:flex lg:gap-6 justify-between" id="home">
+        <div class="">
+          <div class="web-3 my-8">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="web-3-mobile" class="lg:hidden w-80"/>
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="web-3-desktop" class="hidden lg:block"/>
+          </div>
+          <div class="lg:flex ">
+            <div class="lg:flex-1 ">
+              <h1 class="font-bold text-5xl mb-3 w-64">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="lg:flex-1 lg:flex lg:flex-col lg:justify-between lg:ml-5">
+              <p class="text-[#84838a] text-sm w-80">
+                We dive into the next evolution of the web that claims to put the power of
+                the platforms back into the hands of the people. But is it really
+                fulfilling its promise?
+              </p>
+              <button
+                class="bg-[#f15d51] w-44 py-3 uppercase text-white tracking-widest mt-6 lg:mt-0 hover:bg-black focus:bg-black"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="new bg-[#00001a] text-white my-8 p-6 w-80 lg:min-w-80">
+          <div>
+            <h2 class="text-3xl text-[#e8ad4e] font-bold mb-4 h-stretch" id="new">New</h2>
+            <h3 class="font-bold text-xl mb-3 hover:text-[#e8ad4e] focus:text-[#e8ad4e] cursor-pointer">Hydrogen VS Electric Cars</h3>
+            <p class="text-[#7f7f97] mb-6 text-sm">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="line border border-[#7f7f97]"></div>
+          <div class="my-6">
+            <h3 class="font-bold text-xl mb-3 hover:text-[#e8ad4e] focus:text-[#e8ad4e] cursor-pointer">The Downsides of AI Artistry</h3>
+            <p class="text-[#7f7f97] mb-6 text-sm">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="line border border-[#7f7f97]"></div>
+          <div class="mt-6">
+            <h3 class="font-bold text-xl mb-3 hover:text-[#e8ad4e] focus:text-[#e8ad4e] cursor-pointer">Is VC Funding Drying Up?</h3>
+            <p class="text-[#7f7f97] mb-6 text-sm">
+              Private funding by VC firms is down 50% YOY. We take a look at what
+              that means.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trending my-16 lg:flex justify-between" id="trending">
+        <div class="01 flex mb-8 w-80">
+          <img src="./assets/images/image-retro-pcs.jpg" class="w-32" alt="retro-pc" />
+          <div class="body ps-6">
+            <h2 class="text-3xl text-[#c8c8cc] font-bold mb-3">01</h2>
+            <h3 class="font-bold text-xl mb-3 hover:text-[#f15d51] cursor-pointer">Reviving Retro PCs</h3>
+            <p class="text-[#a7a4ab] text-sm">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        
+        <div class="01 flex mb-8 w-80">
+          <img src="./assets/images/image-top-laptops.jpg" class="w-32" alt="laptops">
+          <div class="body ps-6">
+            <h2 class="text-3xl text-[#c8c8cc] font-bold mb-3">02</h2>
+            <h3 class="font-bold text-xl mb-3 hover:text-[#f15d51] cursor-pointer">Top 10 Laptops of 2022</h3>
+            <p class="text-[#a7a4ab] text-sm">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        
+        <div class="01 flex mb-8 w-80">
+          <img src="./assets/images/image-gaming-growth.jpg" class="w-32" alt="gaming-growth">
+          <div class="body ps-6">
+            <h2 class="text-3xl text-[#c8c8cc] font-bold mb-3">03</h2>
+            <h3 class="font-bold text-xl mb-3 hover:text-[#f15d51] cursor-pointer">The Growth of Gaming</h3>
+            <p class="text-[#a7a4ab] text-sm">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+    </main>
+      
+    </div>
+    <footer class="attribution text-center">
+      Coded by <a href="https://github.com/SushCod3" class="font-bold text-[#c8c8cc] hover:text-[#f15d51] focus:text-[#f15d51]"> Sushmoy</a>.
+    </footer>
+    <script>
+      let menu = document.getElementById("navbarMenu");
+      function toggleMenu() {
+        menu.style.display = "block";
+      }
+      function closeMenu() {
+        menu.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
