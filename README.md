@@ -2,7 +2,7 @@
 
 This is a fully responsive grid layout news homepage with hover states implemented.
 
-Live Site: [News Homepage](https://sushcod3.github.io/news-homepage/)
+Live Site: [News Homepage](https://isushmoy.github.io/news-homepage/)
 
 ## Table of contents
 
